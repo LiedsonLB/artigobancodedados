@@ -123,4 +123,7 @@ footer, #Title {
     #line {
         display: block !important;
     }
+    #autoria {
+        font-size: 1.1rem;
+    }
 }
