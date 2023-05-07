@@ -6,8 +6,6 @@
     --purple-color: rgb(115, 12, 163);
     --background-color: #fff;
     --Font-letter: 'Montserrat', sans-serif;
-    --Title-letter-size: 3.6rem;
-    --Page-letter-size: 2.2rem;
 }
 
 html, body {
@@ -57,13 +55,17 @@ header {
     width: 60%;
 }
 main {
-    width: 60%;
+    max-width: 80%;
     margin: 0 auto;
 }
 main h1 {
     text-align: center;
     margin: 0;
     padding: 2rem 0px;
+}
+main p {
+    line-height: 1.7;
+    font-size: 1.2rem;
 }
 footer, #Title {
     height: 5%;
@@ -75,6 +77,18 @@ footer, #Title {
     color: var(--Letter-white);
     padding: 1rem 0px;
     margin: 0;
+    flex-direction: column;
+}
+#social-midia {
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+#social-midia a {
+    font-size: 2rem;
+    color: var(--Letter-white);
 }
 
 @media (max-width: 767px) {
@@ -87,6 +101,9 @@ footer, #Title {
     header {
         flex-direction: column !important;
     }
+    hr {
+        display: none !important;
+    }
     #container-text {
         width: 100%;
     }
@@ -97,9 +114,13 @@ footer, #Title {
         width: 90%;
     }
     main {
-        width: 100%;
+        width: 100% !important;
+        max-width: 90%;
     }
     main h1 {
         font-size: 1.6rem;
+    }
+    #line {
+        display: block !important;
     }
 }
