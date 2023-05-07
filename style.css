@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --Dark-gray: rgb(29, 29, 29);
+    --Letter-white: #e9e9e9;
+    --purple-color: rgb(115, 12, 163);
+    --background-color: #fff;
+    --Font-letter: 'Montserrat', sans-serif;
+    --Title-letter-size: 3.6rem;
+    --Page-letter-size: 2.2rem;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark-gray);
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+#container-screen {
+    width: 80%;
+    padding: 0 215px;
+    background: var(--background-color);
+}
+#category {
+    margin: 0;
+    padding: 1rem 0px;
+}
+header {
+    padding: 1rem 0px;
+    display: flex;
+    flex-direction: row;
+}
+#container-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#container-text h2 {
+    line-height: 1.6em;
+    margin: 0;
+}
+#container-text p {
+    font-weight: bolder;
+    color: var(--purple-color);
+}
+#container-img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container-img img{
+    width: 60%;
+}
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+main h1 {
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0px;
+}
+footer, #Title {
+    height: 5%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--Dark-gray);
+    color: var(--Letter-white);
+    padding: 1rem 0px;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    #container-screen {
+        width: 95%;
+        padding: 0 !important;
+        margin: 0 auto;
+        padding: 0px 1rem;
+    }
+    header {
+        flex-direction: column !important;
+    }
+    #container-text {
+        width: 100%;
+    }
+    #container-img {
+        width: 100%;
+    }
+    #container-img img{
+        width: 90%;
+    }
+    main {
+        width: 100%;
+    }
+    main h1 {
+        font-size: 1.6rem;
+    }
+}
